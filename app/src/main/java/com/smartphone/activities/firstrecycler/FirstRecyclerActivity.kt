@@ -33,7 +33,7 @@ class FirstRecyclerActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun initObservers() {
-        viewModel.liveDataHobbies.observe(this) { smartphones ->
+        viewModel.liveDataSmartphones.observe(this) { smartphones ->
             initRecycler(smartphones)
         }
     }
